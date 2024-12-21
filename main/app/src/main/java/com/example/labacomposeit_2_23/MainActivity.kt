@@ -16,6 +16,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.labacomposeit_2_23.dataclasses.City
+import com.example.labacomposeit_2_23.screens.LanguageButton
 import com.example.labacomposeit_2_23.screens.search_screen
 import com.example.labacomposeit_2_23.screens.weathereport_screen
 import kotlinx.coroutines.CoroutineScope
@@ -55,7 +56,7 @@ class MainActivity : ComponentActivity() {
                 runOnUiThread {
                     setContent {
                         SetUpScrollView( sorted_list, cities)
-//                         LanguageButton(language = "RU")
+                         LanguageButton(language = "RU")
                     }
                 }
 
