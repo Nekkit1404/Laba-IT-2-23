@@ -1,4 +1,4 @@
-package com.example.labacomposeit_2_23
+package com.example.labacomposeit_2_23.dataclasses
 
 data class City (
     val id: String,

@@ -21,7 +21,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.labacomposeit_2_23.City
+import com.example.labacomposeit_2_23.dataclasses.City
 import com.example.labacomposeit_2_23.weatherReport.StartReport
 
 @Composable
@@ -51,6 +51,28 @@ fun search_screen(
                         .padding(start = 10.dp)
                 )
 
+            }
+            items(city) { city ->
+                TextButton(
+                    onClick = {
+                        StartReport(cities, city)
+                        Thread.sleep(500)
+                            SeeWeather()
+                    },
+                    modifier = Modifier
+                        .padding(horizontal = 50.dp, vertical = 5.dp)
+                        .fillMaxWidth()
+
+
+                ) {
+                    Text(
+                        text = city,
+                        fontSize = 24.sp,
+                        textAlign = TextAlign.Start,
+                        modifier = Modifier
+                            .fillMaxSize()
+                    )
+                }
             }
         }
     }

@@ -1,6 +1,6 @@
 package com.example.labacomposeit_2_23.weatherReport
 
-import com.example.labacomposeit_2_23.City
+import com.example.labacomposeit_2_23.dataclasses.City
 
 fun FindCoordinates(cities: List<City>, city: String): Pair<String, String> {
     val lat: String

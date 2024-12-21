@@ -1,7 +1,7 @@
 package com.example.labacomposeit_2_23.weatherReport
 
-import com.example.labacomposeit_2_23.City
-import com.example.labacomposeit_2_23.CurrentChosenCity
+import com.example.labacomposeit_2_23.dataclasses.City
+import com.example.labacomposeit_2_23.dataclasses.CurrentChosenCity
 import com.example.labacomposeit_2_23.weatherReport.FindCoordinates
 import com.example.labacomposeit_2_23.WeatherReportApi
 import kotlinx.coroutines.CoroutineScope

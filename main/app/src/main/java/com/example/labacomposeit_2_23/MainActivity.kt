@@ -15,7 +15,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.labacomposeit_2_23.dataclasses.City
 import com.example.labacomposeit_2_23.screens.search_screen
+import com.example.labacomposeit_2_23.screens.weathereport_screen
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -81,6 +83,11 @@ fun SetUpScrollView(sortedlist: MutableList<String>, cities: List<City>) {
                 NavController.navigate("weathereport_screen")
 
             }
+        }
+        composable("weathereport_screen") {
+                    weathereport_screen( cities = cities) {
+                        NavController.navigate("search_screen")
+                    }
         }
     }
 }
